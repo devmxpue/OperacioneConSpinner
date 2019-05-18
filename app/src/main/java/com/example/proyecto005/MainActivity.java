@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         spinner1 = (Spinner) findViewById(R.id.spinner1);
         //se muestran las opciones del Spinner(Combobox)
-        String [] opciones={"Sumar","Restar","Multiplicar","Dividir","Factorizar"};
+        String [] opciones={"Sumar","Restar","Multiplicar","Dividir","Factorizar", "Imaginarios"};
         //
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_spinner_item, opciones);
         spinner1.setAdapter(adapter);
@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
         if(selec.equals("Factorizar")){
             textView3.setText("No hace nada esta opcion");
         }
-        
+        else
+        if(selec.equals("Imaginarios")){
+            textView3.setText("Nada reelevante para esta opcion");
+        }
     }
 }
